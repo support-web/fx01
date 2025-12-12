@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FX MASTER PRO - AI自動取引システム | プロトレーダーの戦略を自動化</title>
+    <meta name="description" content="FX MASTER PROは、AIと機械学習を活用した次世代の自動取引システムです。24時間監視、高勝率アルゴリズムでプロトレーダーの戦略を自動化します。">
+    <meta property="og:title" content="FX MASTER PRO - AI自動取引システム">
+    <meta property="og:description" content="プロトレーダーの戦略を自動化する次世代FXシステム">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">FX</span>
+                    <span class="logo-text">MASTER PRO</span>
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#features">機能</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
+                        <li><a href="#testimonials">導入事例</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="btn btn-primary header-cta">無料デモを試す</a>
+                <button class="mobile-menu-btn" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <canvas id="waveCanvas"></canvas>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-main">プロトレーダーの戦略を自動化する</span>
+                    <span class="hero-title-accent">次世代FXシステム</span>
+                </h1>
+                <p class="hero-subtitle">あなたの取引を革新する</p>
+                <p class="hero-description">
+                    AIと機械学習を活用した高度なアルゴリズムで、24時間365日自動で取引を監視・実行。
+                    プロトレーダーの戦略をあなたの手元に。
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">今すぐ始める</a>
+                    <a href="#" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-play-circle"></i>
+                        デモ動画を見る
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">98.7%</span>
+                        <span class="stat-label">勝率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">15,000+</span>
+                        <span class="stat-label">アクティブユーザー</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">¥2.8億</span>
+                        <span class="stat-label">月間取引高</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">主な機能</h2>
+                <p class="section-subtitle">最先端のAI技術であなたの取引をサポート</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">リアルタイムチャート分析</h3>
+                    <p class="feature-description">
+                        AIが市場データをリアルタイムで分析し、最適なエントリーポイントを自動検出。
+                        複数のテクニカル指標を組み合わせた高精度な分析を提供します。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="feature-title">自動取引システム</h3>
+                    <p class="feature-description">
+                        24時間365日、感情に左右されない一貫した取引を実行。
+                        設定した戦略に基づき、最適なタイミングで売買を自動化します。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">リスク管理機能</h3>
+                    <p class="feature-description">
+                        ストップロス、テイクプロフィットを自動設定。
+                        ポートフォリオ全体のリスクを常に監視し、資産を保護します。
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="feature-title">詳細なレポート機能</h3>
+                    <p class="feature-description">
+                        取引履歴、損益分析、パフォーマンス指標を詳細にレポート。
+                        データに基づいた戦略改善をサポートします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">料金プラン</h2>
+                <p class="section-subtitle">あなたのニーズに合ったプランをお選びください</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">ベーシック</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">¥29,800</span>
+                            <span class="price-period">/月</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>基本的な自動取引</li>
+                        <li><i class="fas fa-check"></i>テクニカル指標5つ</li>
+                        <li><i class="fas fa-check"></i>メールサポート</li>
+                        <li><i class="fas fa-check"></i>最大3通貨ペア</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">プランを選択</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">人気No.1</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">プロフェッショナル</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">¥59,800</span>
+                            <span class="price-period">/月</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>高度な自動取引</li>
+                        <li><i class="fas fa-check"></i>15以上のテクニカル指標</li>
+                        <li><i class="fas fa-check"></i>24時間優先サポート</li>
+                        <li><i class="fas fa-check"></i>無制限通貨ペア</li>
+                        <li><i class="fas fa-check"></i>バックテスト機能</li>
+                        <li><i class="fas fa-check"></i>カスタム戦略設定</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">プランを選択</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">エンタープライズ</h3>
+                        <div class="pricing-price">
+                            <span class="price-amount">¥149,800</span>
+                            <span class="price-period">/月</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i>プロフェッショナルの全機能</li>
+                        <li><i class="fas fa-check"></i>専任アカウントマネージャー</li>
+                        <li><i class="fas fa-check"></i>API連携</li>
+                        <li><i class="fas fa-check"></i>カスタム開発</li>
+                        <li><i class="fas fa-check"></i>複数アカウント管理</li>
+                        <li><i class="fas fa-check"></i>ホワイトラベル対応</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">プランを選択</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">導入事例</h2>
+                <p class="section-subtitle">多くのユーザーが成果を実感しています</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            「FX MASTER PROを導入してから、収益が3倍になりました。特にリスク管理機能が優秀で、
+                            大きな損失を防いでくれています。24時間自動で取引してくれるので、本業に集中できるようになりました。」
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">田中 健太</span>
+                            <span class="author-title">個人投資家 / 株式会社インベストメント</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            「初心者でも使いやすいインターフェースで、すぐに取引を始められました。
+                            サポートも丁寧で、わからないことがあればすぐに解決できます。今では月10万円以上の利益を安定して出せています。」
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">佐藤 美咲</span>
+                            <span class="author-title">会社員 / 副業トレーダー</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">
+                            「エンタープライズプランのAPI連携を活用して、自社のシステムと統合しています。
+                            カスタム開発にも柔軟に対応してもらえ、ビジネスの成長に大きく貢献しています。」
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">山本 大輔</span>
+                            <span class="author-title">CEO / テックファイナンス株式会社</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-nav">
+                <button class="nav-btn prev" aria-label="前へ"><i class="fas fa-chevron-left"></i></button>
+                <div class="nav-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="nav-btn next" aria-label="次へ"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">よくある質問</h2>
+                <p class="section-subtitle">ご不明な点がございましたらお気軽にお問い合わせください</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>初期資金はいくら必要ですか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>最低10万円から始めることができます。ただし、安定した運用のためには30万円以上をおすすめしています。資金に応じたリスク管理設定も可能です。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>FX初心者でも使いこなせますか？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>はい、初心者の方でも安心してお使いいただけます。直感的なインターフェースと、充実したチュートリアル、サポート体制を整えています。また、デモモードで実際の資金を使わずに練習することも可能です。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>自動取引の仕組みを教えてください</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>AIが複数のテクニカル指標とマーケットデータをリアルタイムで分析し、最適なエントリー・エグジットポイントを判断します。設定した戦略とリスク許容度に基づいて、24時間自動で取引を実行します。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>対応している通貨ペアは？</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>主要通貨ペア（USD/JPY、EUR/USD、GBP/USDなど）を含む30以上の通貨ペアに対応しています。プランによって利用可能な通貨ペア数が異なります。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>リスク管理機能について詳しく教えてください</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ストップロス・テイクプロフィットの自動設定、ポジションサイズの自動計算、最大ドローダウン制限、日次損失制限など、多層的なリスク管理機能を搭載しています。これにより、予期せぬ大きな損失を防ぎます。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>解約条件を教えてください</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>解約はいつでも可能です。次回請求日の3営業日前までにお申し出いただければ、翌月からの請求は発生しません。違約金や解約手数料は一切かかりません。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>サポート体制について教えてください</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ベーシックプランはメールサポート（平日10:00-18:00）、プロフェッショナルプラン以上は24時間チャット・電話サポートをご利用いただけます。エンタープライズプランでは専任のアカウントマネージャーがつきます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">無料デモ・ご相談</h2>
+                <p class="section-subtitle">まずは無料でお試しください</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>お気軽にお問い合わせください</h3>
+                    <p>専門スタッフが丁寧にご説明いたします。無料デモでは実際の取引環境をお試しいただけます。</p>
+                    <ul class="contact-benefits">
+                        <li><i class="fas fa-check-circle"></i>14日間無料トライアル</li>
+                        <li><i class="fas fa-check-circle"></i>クレジットカード不要</li>
+                        <li><i class="fas fa-check-circle"></i>専門スタッフによるサポート</li>
+                        <li><i class="fas fa-check-circle"></i>いつでもキャンセル可能</li>
+                    </ul>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">希望プラン</label>
+                        <select id="plan" name="plan">
+                            <option value="">選択してください</option>
+                            <option value="basic">ベーシック</option>
+                            <option value="professional">プロフェッショナル</option>
+                            <option value="enterprise">エンタープライズ</option>
+                            <option value="undecided">未定・相談したい</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="4" maxlength="500" placeholder="ご質問やご要望をご記入ください（500文字以内）"></textarea>
+                        <span class="char-count"><span id="charCount">0</span>/500</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">FX</span>
+                        <span class="logo-text">MASTER PRO</span>
+                    </a>
+                    <p class="footer-description">
+                        AIと機械学習を活用した次世代の自動取引システム。プロトレーダーの戦略をあなたの手元に。
+                    </p>
+                    <div class="newsletter">
+                        <h4>ニュースレター登録</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="メールアドレス" required>
+                            <button type="submit" class="btn btn-primary">登録</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>クイックリンク</h4>
+                    <ul>
+                        <li><a href="#features">機能紹介</a></li>
+                        <li><a href="#pricing">料金プラン</a></li>
+                        <li><a href="#faq">よくある質問</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>SNS</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2024 FX MASTER PRO. All rights reserved.</p>
+                <p class="powered-by">Powered by Readdy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
